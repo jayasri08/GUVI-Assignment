@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/profile.css">
+
+</head>
+<body>
+    <div class='about'>
+        <div class='flex m-3'>
+        <div class='flex-1 '>
+          <h4 class='titles'>Username </h4>
+        </div>
+        <div class='flex-1'>
+          <h5>{username}</h5>
+        </div></div>
+
+        <div class='flex m-3'>
+        <div class='flex-1'>
+          <h4 class='titles'>Email    </h4>
+        </div>
+        <div class='flex-1'>
+          <h5>{useremail}</h5>
+        </div></div>
+
+        
+
+        <div class='flex m-3'>
+        <div class='flex-1'>
+          <h4 class='titles'>Department  </h4>
+        </div>
+        <div class='flex-1'>
+          <h5>{department}</h5>
+        </div></div>
+
+       
+        <div class='flex m-3'>
+        <div class='flex-1'>
+          <h4 class='titles'>Gender     </h4>
+        </div>
+        <div class='flex-1'>
+          <h5>{gender}</h5>
+        </div></div>
+
+</div>
+      
+    <div class="flex">
+        <!-- <div class='flex-1 ml-4'><h4>Want to edit?</h4></div>
+        <div class='flex-1'> <Button variant="primary" onClick={handleShow}>
+       
+          GO HERE
+        </Button></div> -->
+
+        <Modal size="lg" show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title><centre>REGISTRATION </centre></Modal.Title>
+          </Modal.Header>
+
+          <Modal.Body>
+          
+            <div class="form">
+              <div class="form-body">
+  
+                <div class="username">
+                  <label class="form__label" for="name"> Name </label><br></br>
+                  <input class="form__input" type="text" id="name" placeholder="Name" />
+                </div><br></br>
+                <div class="department">
+                    <label class="form__label" for="department">Department </label><br></br>
+                   
+                    <select>        
+    
+    <option value="cse">CSE</option>
+    <option value="ECE">ECE</option>
+    <option value="EEE">EEE</option>
+    <option value="METT">METT</option>
+    <option value="MECH">MECH</option>
+    </select>
+                  </div><br></br>
+                
+                  <div class="Gender">
+                    <label class="form__label" for="Gender">Gender </label><br></br>
+                   </div>
+                   <div>
+                     <input type="radio" name="gender" value="male"/>Male
+                     <input type="radio" name="gender" value="female"/>Female
+                  </div><br></br>
+   
+    
+               
+                 <div class="footer">
+                  <button type="submit" class="btn">Register</button>
+                </div> 
+            </div>
+
+
+          </Modal.Body>
+
+          <Modal.Footer>
+
+
+            </Button>
+
+          </Modal.Footer>
+
+        </Modal>
+
+     </div>
+
+</body>
+</html>
